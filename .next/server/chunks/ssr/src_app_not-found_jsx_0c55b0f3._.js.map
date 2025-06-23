@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///Users/johnlewu/Documents/charlie25/hr-practice/src/app/not-found.jsx"],"sourcesContent":["import React from 'react'\n\nexport default function NotFound() {\n  return (\n    <div className=\"flex flex-col items-center justify-center min-h-screen bg-gray-900 text-white uppercase text-6xl\">\n        <h2>sorry  the page you are looking for does not exist</h2>\n    </div>\n  )\n}\n"],"names":[],"mappings":";;;;AAAA;;;AAEe,SAAS;IACtB,qBACE,8OAAC;QAAI,WAAU;kBACX,cAAA,8OAAC;sBAAG;;;;;;;;;;;AAGZ","debugId":null}}]
+}
