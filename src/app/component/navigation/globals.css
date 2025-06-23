@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+@layout components{
+    .job-card{
+        @apply border-4 border-s-slate-950 rounded-md;
+    }
+}
+

@@ -1,7 +1,7 @@
 import {Roboto } from "next/font/google";
 import "./globals.css";
 import Footer from "../Footer";
-import Nav from "../navigation/Nav";
+import Nav from "./Nav";
 
 const roboto = Roboto( {
   variable: "--font-roboto",
