@@ -1,0 +1,18 @@
+/* [project]/src/app/component/navigation/home.modules.css [app-client] (css) */
+html {
+  color: #40e0d0;
+}
+
+.home {
+  background-blend-mode: lighten;
+  background-image: url("../media/dylan-gillis-KdeqA3aTnBY-unsplash.a3160738.jpg");
+  background-size: cover;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  display: flex;
+}
+
+
+/*# sourceMappingURL=src_app_component_navigation_home_modules_565528e3.css.map*/

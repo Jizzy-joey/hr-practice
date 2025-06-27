@@ -1,0 +1,13 @@
+/* [project]/src/app/component/home.modules.css [app-client] (css) */
+.home {
+  background-blend-mode: lighten;
+  background-image: url("/public/background.jpg");
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  display: flex;
+}
+
+
+/*# sourceMappingURL=src_app_component_home_modules_22846776.css.map*/
