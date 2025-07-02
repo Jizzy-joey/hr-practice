@@ -2,7 +2,7 @@
 
 @layout components{
     .job-card{
-        @apply border-4 border-s-slate-950 rounded-md;
+        @apply border-4 border-blue-500 rounded-md;
     }
 }
 

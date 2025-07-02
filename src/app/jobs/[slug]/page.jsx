@@ -1,3 +1,5 @@
+import Button from "@/app/component/Button";
+import SavesButton from "@/app/component/SavesButton";
 import jobs from "@/app/data/jobs";
 import Image from "next/image";
 import Link from "next/link";
@@ -25,9 +27,10 @@ export default async function jobDescription({ params }) {
              text-white px-4 py-2 rounded-lg flex justify-between
                 ${Math.ceil((new Date(jobDetails.endDate)
                  - new Date()) / (1000 * 60 * 60 * 24)) < 4 ?
-                  'bg-red-500 animate-pulse' : 'bg-slate-600'}`}>
-                    {Math.ceil((new Date(jobDetails.endDate)
-                     - new Date()) / (1000 * 60 * 60 * 24))} days left
+                  'bg-red-500 animate-pulse' : 'bg-blue-900'}`}>
+                    {Math.ceil((new Date(jobDetails.endDate) - new Date()) / (1000 * 60 * 60 * 24)) < 0
+                        ? 'Expired'
+                        : 'Days Left: ' + Math.ceil((new Date(jobDetails.endDate) - new Date()) / (1000 * 60 * 60 * 24))}
                 </p>
 
         </h1>
@@ -56,11 +59,17 @@ export default async function jobDescription({ params }) {
 
             <section>
                <Link href={`/apply/${jobDetails.title.toLocaleLowerCase().replace(/\s+/g, '-')}`}>
-                   <input type="button" value="Apply Now"
-                   className="bg-slate-950 text-white px-4 py-2 rounded-md
-                   hover:bg-slate-600 transition-all duration-300 cursor-pointer
+                   <input type="button" value={`${Math.ceil((new Date(jobDetails.endDate) - 
+                   new Date()) / (1000 * 60 * 60 * 24))} days left - Apply Now`}       
+                   className="bg-black text-white px-4 py-2 rounded-md
+                   hover:bg-blue-900 transition-all duration-300 cursor-pointer
                    flex items-center justify-center space-x-2"/>
                </Link>
+               {
+                  new Date(jobDetails.endDate) > new Date() &&
+                  <SavesButton title={jobDetails.title} company={jobDetails.company} />
+               }
+
             </section>
 
             <section>
@@ -70,11 +79,11 @@ export default async function jobDescription({ params }) {
                    {jobRelated.map((job) => (
                        <Link key={job.id} href={`/jobs/${job.title.toLocaleLowerCase().replace(/\s+/g, '-')}`}
                        className="flex flex-col items-start justify-center
-                        p-4 bg-slate-100 rounded-lg shadow-md hover:bg-slate-200 transition-all duration-300">
-                           <h3 className="text-lg text-slate-900 hover:underline">{job.title}</h3>
-                            <p className="text-sm text-slate-600">{job.company}</p>
-                            <p className="text-sm text-slate-600">{job.location}</p>
-                            <p className="text-sm text-slate-600">{job.category}</p>
+                        p-4 bg-black rounded-lg shadow-md hover:bg-blue-900 transition-all duration-300">
+                           <h3 className="text-lg text-slate-100 hover:underline">{job.title}</h3>
+                            <p className="text-sm text-slate-100">{job.company}</p>
+                            <p className="text-sm text-slate-100">{job.location}</p>
+                            <p className="text-sm text-slate-100">{job.category}</p>
                        </Link>
                    ))}
                </div>

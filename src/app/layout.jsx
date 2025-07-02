@@ -2,6 +2,7 @@ import {Roboto } from "next/font/google";
 import "./globals.css";
 import Nav from "./component/navigation/Nav";
 import Footer from "./component/Footer";
+import { SideProvider } from "./providers";
 
 const roboto = Roboto( {
   variable: "--font-roboto",
@@ -13,7 +14,7 @@ const roboto = Roboto( {
 
 export const metadata = {
   title: "HR Platform",
-  description: "A simple HR platform built with Next.js",
+  description: "A simple HR platform to connect job seekers with employers",
 };
 
 export default function RootLayout({ children }) {
@@ -24,7 +25,9 @@ export default function RootLayout({ children }) {
       >
         <Nav />
         <div className="min-h-screen">
-          {children}
+          <SideProvider>
+            {children}
+          </SideProvider>
         </div>
         
         <Footer/>

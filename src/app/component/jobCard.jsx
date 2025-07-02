@@ -7,8 +7,8 @@ import Button from "./Button";
 export default function JobCard(props) {
     const jobList = jobs.map((job) => (
         <article key={job.id} className="job-card">
-            <p className="flex items-center justify-center space-x-2 text-slate-50
-            bg-slate-950 w-fit p-2">
+            <p className="flex items-center justify-center space-x-2 text-black
+            blue-900 w-fit p-2">
                 <MdHomeWork className="text-2xl ml-2"/>
                 <span>{job.company}</span>
             </p>
@@ -25,7 +25,16 @@ export default function JobCard(props) {
 
         </article>
     ));
-    return <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 ">{jobList}
-    {[...jobList].sort(() =>0.8-Math.random()).slice(0,props.val)}
-    </div>;
+    return (
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            {[...jobList]
+                .sort(() => 0.8 - Math.random())
+                .slice(0, props.val)
+                .map((card, idx) => (
+                    <div key={idx} className="border rounded-lg overflow-hidden">
+                        {card}
+                    </div>
+                ))}
+        </div>
+    );
 }

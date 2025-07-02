@@ -20,12 +20,12 @@ function Button({ title }) {
     _s();
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"])();
     const handleClick = ()=>{
-        router.push(`/jobs/${title.toLo().replace(/\s+/g, '-')}`);
+        router.push(`/jobs/${title.toLowerCase().replace(/\s+/g, '-')}`);
     // This will navigate to the job description page with the title as a slug
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
         onClick: handleClick,
-        className: "bg-slate-500 text-white px-4 py-2 rounded-md hover:bg-slate-950 transition-all duration-300 capitalize cursor-pointer",
+        className: "bg-black text-white px-4 py-2 rounded-md hover:bg-blue-900 transition-all duration-300 capitalize cursor-pointer",
         children: "Read More"
     }, void 0, false, {
         fileName: "[project]/src/app/component/Button.jsx",

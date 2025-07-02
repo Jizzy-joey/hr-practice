@@ -37,23 +37,44 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 ;
 function Header() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
-        className: "flex flex-col items-center justify-center  bg-gray-900",
+        className: "flex flex-col items-center justify-center",
+        style: {
+            backgroundImage: "url('/bgimg.jpg')",
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            width: '100%',
+            height: '60vh',
+            backdropFilter: 'blur(50%)',
+            display: 'flex',
+            position: 'relative',
+            overflow: 'hidden'
+        },
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                className: "uppercase text-green-300  text-5xl py-8 text-center",
+                className: "uppercase text-white text-5xl py-8 text-center bg-black",
                 children: "HR Platform"
             }, void 0, false, {
                 fileName: "[project]/src/app/component/Header.jsx",
-                lineNumber: 6,
-                columnNumber: 9
+                lineNumber: 19,
+                columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                className: "bg-slate-950 text-slate-100 flex items-center justify-center",
-                children: "A simple HR platform built with Next.js"
-            }, void 0, false, {
+                className: "text-slate-100 flex items-center justify-center",
+                children: [
+                    "A simple HR platform built with Next.js, Tailwind CSS, and MongoDB.",
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                        className: "text-blue-900 font-semibold",
+                        children: " Your one-stop solution for all HR needs"
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/component/Header.jsx",
+                        lineNumber: 22,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
                 fileName: "[project]/src/app/component/Header.jsx",
-                lineNumber: 8,
-                columnNumber: 9
+                lineNumber: 20,
+                columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
@@ -161,6 +182,156 @@ const jobs = [
         ],
         postedAt: "2025-06-14",
         endDate: "2025-07-14"
+    },
+    {
+        id: 7,
+        title: "Data Scientist",
+        category: "Data Science",
+        company: "DataCrux",
+        location: "Remote",
+        description: "Analyze complex datasets to drive business decisions.",
+        requirements: [
+            "Proficiency in Python and SQL",
+            "Experience with machine learning models",
+            "Strong data visualization skills"
+        ],
+        postedAt: "2025-06-19",
+        endDate: "2025-07-19"
+    },
+    {
+        id: 8,
+        title: "DevOps Engineer",
+        category: "DevOps",
+        company: "CloudCore",
+        location: "Remote",
+        description: "Automate infrastructure and manage CI/CD pipelines.",
+        requirements: [
+            "Experience with Docker, Kubernetes, and AWS",
+            "Strong scripting skills (Bash, Python)",
+            "Knowledge of monitoring tools"
+        ],
+        postedAt: "2025-06-21",
+        endDate: "2025-07-21"
+    },
+    {
+        id: 9,
+        title: "Mobile App Developer",
+        category: "Mobile Development",
+        company: "AppForge",
+        location: "Lagos, Nigeria",
+        description: "Develop and maintain cross-platform mobile applications.",
+        requirements: [
+            "Experience with Flutter or React Native",
+            "Understanding of mobile UI/UX",
+            "Published apps on Play Store or App Store"
+        ],
+        postedAt: "2025-06-13",
+        endDate: "2025-07-13"
+    },
+    {
+        id: 10,
+        title: "Quality Assurance Engineer",
+        category: "QA/Testing",
+        company: "BugTrackers",
+        location: "Remote",
+        description: "Test software and ensure it meets quality standards.",
+        requirements: [
+            "Knowledge of test automation tools",
+            "Familiarity with manual and automated testing",
+            "Understanding of SDLC"
+        ],
+        postedAt: "2025-06-16",
+        endDate: "2025-07-16"
+    },
+    {
+        id: 11,
+        title: "AI Research Engineer",
+        category: "AI/ML",
+        company: "NeuroNet",
+        location: "Remote",
+        description: "Research and implement cutting-edge AI algorithms.",
+        requirements: [
+            "Strong background in deep learning",
+            "Experience with TensorFlow or PyTorch",
+            "Research publications are a plus"
+        ],
+        postedAt: "2025-06-17",
+        endDate: "2025-07-17"
+    },
+    {
+        id: 12,
+        title: "Technical Writer",
+        category: "Technical Writing",
+        company: "DocuTech",
+        location: "Remote",
+        description: "Create clear and concise documentation for software products.",
+        requirements: [
+            "Excellent writing and communication skills",
+            "Ability to explain technical concepts",
+            "Experience with Markdown or Docs-as-code tools"
+        ],
+        postedAt: "2025-06-11",
+        endDate: "2025-07-11"
+    },
+    {
+        id: 13,
+        title: "Business Analyst",
+        category: "Business Analysis",
+        company: "InsightOps",
+        location: "Hybrid - Abuja",
+        description: "Bridge the gap between business needs and technical solutions.",
+        requirements: [
+            "Strong analytical and problem-solving skills",
+            "Experience with data analysis tools",
+            "Excellent communication abilities"
+        ],
+        postedAt: "2025-06-22",
+        endDate: "2025-07-22"
+    },
+    {
+        id: 14,
+        title: "Systems Administrator",
+        category: "IT Support",
+        company: "SysNet",
+        location: "On-site - Lagos",
+        description: "Maintain and troubleshoot system infrastructure.",
+        requirements: [
+            "Experience with Windows/Linux servers",
+            "Knowledge of networking",
+            "Familiarity with backups and disaster recovery"
+        ],
+        postedAt: "2025-06-23",
+        endDate: "2025-07-23"
+    },
+    {
+        id: 15,
+        title: "UX Researcher",
+        category: "User Research",
+        company: "HumanTech",
+        location: "Remote",
+        description: "Conduct research to understand user needs and behaviors.",
+        requirements: [
+            "Experience with user interviews and surveys",
+            "Ability to synthesize insights into design recommendations",
+            "Background in psychology or HCI is a plus"
+        ],
+        postedAt: "2025-06-24",
+        endDate: "2025-07-24"
+    },
+    {
+        id: 16,
+        title: "Technical Support Specialist",
+        category: "Customer Support",
+        company: "HelpDeskPro",
+        location: "Remote",
+        description: "Assist customers with technical issues and troubleshooting.",
+        requirements: [
+            "Excellent problem-solving skills",
+            "Clear and patient communication",
+            "Basic understanding of software systems"
+        ],
+        postedAt: "2025-06-25",
+        endDate: "2025-07-25"
     }
 ];
 const __TURBOPACK__default__export__ = jobs;
@@ -224,7 +395,7 @@ function JobCard(props) {
             className: "job-card",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                    className: "flex items-center justify-center space-x-2 text-slate-50 bg-slate-950 w-fit p-2",
+                    className: "flex items-center justify-center space-x-2 text-black blue-900 w-fit p-2",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$md$2f$index$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["MdHomeWork"], {
                             className: "text-2xl ml-2"
@@ -291,17 +462,21 @@ function JobCard(props) {
             columnNumber: 9
         }, this));
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 ",
+        className: "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8",
         children: [
-            jobList,
-            [
-                ...jobList
-            ].sort(()=>0.8 - Math.random()).slice(0, props.val)
-        ]
-    }, void 0, true, {
+            ...jobList
+        ].sort(()=>0.8 - Math.random()).slice(0, props.val).map((card, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "border rounded-lg overflow-hidden",
+                children: card
+            }, idx, false, {
+                fileName: "[project]/src/app/component/JobCard.jsx",
+                lineNumber: 34,
+                columnNumber: 21
+            }, this))
+    }, void 0, false, {
         fileName: "[project]/src/app/component/JobCard.jsx",
-        lineNumber: 28,
-        columnNumber: 12
+        lineNumber: 29,
+        columnNumber: 9
     }, this);
 }
 }}),
@@ -322,7 +497,7 @@ function JobCategory() {
         className: "md:py-16 md:px-8 py-4 px-2",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                className: "md:text-3xl text-lg font-bold uppercase py-4 my-5 border-b-8 w-fit border-b-cyan-500",
+                className: "md:text-3xl text-lg font-bold uppercase py-4 my-5 border-b-8 w-fit border-b-blue-900",
                 children: "Top Job Available"
             }, void 0, false, {
                 fileName: "[project]/src/app/component/JobCategory.jsx",

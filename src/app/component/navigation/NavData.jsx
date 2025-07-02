@@ -3,6 +3,7 @@ import Link from 'next/link';
 export default function NavData() {
     return (
         <>
+        <li></li>
             <li>
                 <Link href="/">Home</Link>
             </li>
@@ -17,6 +18,9 @@ export default function NavData() {
             </li>
             <li>
                 <Link href="/contact">Contact</Link>
+            </li>
+            <li>
+                <Link href="/dashboard">dashboard</Link>
             </li>
         </>
     );
