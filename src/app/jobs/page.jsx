@@ -5,9 +5,7 @@ import Categories from "../component/Categories";
 export default function Jobs() {
     return (
         <div>
-        
-            <Categories />
-            <JobCard val={jobs.length}/>
+            <JobCard val={jobs.length} />
         </div>
     )
 }

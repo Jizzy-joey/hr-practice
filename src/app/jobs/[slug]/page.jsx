@@ -7,22 +7,30 @@ import { MdOutlineEditNote } from "react-icons/md";
 // import { IoMdArrowBack } from "react-icons/io";
 export default async function jobDescription({ params }) {
 
-    const { slug } = await params;
+    const { slug } = params;
     // Convert slug to lowercase and replace spaces with hyphens for matching
 
+    const jobDetails = jobs.find(job => job.title.toLocaleLowerCase().replace(/\s+/g, '-') === slug);
 
-    const jobDetails = jobs.find(job =>
-         job.title.toLocaleLowerCase().replace(/\s+/g, '-') === slug);
+    if (!jobDetails) {
+        return (
+            <div className="flex flex-col items-center justify-center p-4 w-4/5 m-auto">
+                <h1 className="font-bold text-3xl py-4 text-red-600">Job Not Found</h1>
+                <p className="text-lg">We could not find the job you are looking for.</p>
+                <Link href="/jobs" className="mt-4 text-blue-600 underline">Back to Jobs</Link>
+            </div>
+        );
+    }
 
-         const jobRelated = [...jobs.filter(job => (job.category === jobDetails.category &&
-          job.title.toLocaleLowerCase().replace(/\s+/g, '-') !== slug) || job.location === jobDetails.location &&
-          job.title.toLocaleLowerCase().replace(/\s+/g, '-') !== slug)].sort(() => 0.5 - Math.random());
+    const jobRelated = [...jobs.filter(job => (job.category === jobDetails.category && job.title.toLocaleLowerCase().replace(/\s+/g, '-') !== slug) || job.location === jobDetails.location && job.title.toLocaleLowerCase().replace(/\s+/g, '-') !== slug)].sort(() => 0.5 - Math.random());
          
     return(
-       <div className="flex flex-col items-start justify-center p-4 w-4/5 m-auto">
-       
+       <div className="flex flex-col items-center justify-center p-4 w-4/5 m-auto">
+
         <h1 className="font-bold text-5xl py-4 border-double
-         border-slate-950 border-b-4">{jobDetails.title}
+         border-slate-950 border-b-4">
+            {jobDetails.title}
+            </h1>
             <p className={`text-2xl font-semibold
              text-white px-4 py-2 rounded-lg flex justify-between
                 ${Math.ceil((new Date(jobDetails.endDate)
@@ -33,7 +41,6 @@ export default async function jobDescription({ params }) {
                         : 'Days Left: ' + Math.ceil((new Date(jobDetails.endDate) - new Date()) / (1000 * 60 * 60 * 24))}
                 </p>
 
-        </h1>
 
         <h2>{jobDetails.company}</h2>
         <h3>{jobDetails.location}</h3>

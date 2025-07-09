@@ -24,14 +24,15 @@ export default function Saves() {
             <p className="text-3xl font-bold">No Saves updates Yet</p>
           </div>
         ) : (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 border-t border-gray-200 pt-4">
             {updates.map((update, index) => (
-              <div key={index} className="border-b border-gray-200 pb-4">
+              <div key={index} className="border-b border-gray-700 pb-4">
                 <h2 className="text-xl font-semibold">{update.name}</h2>
                 <p className="text-gray-600">{update.company}</p>
-                <div className="flex items-center space-x-2">
-                  <button className="text-blue-500 hover:underline
-                  transition duration-300 cursor-pointer"
+                <div className="flex items-center space-x-2 ">
+                  <button className="text- hover:underline bg-blue-900 text-white hover:bg-blue-700
+                  hover:scale-105  hover:shadow-lg
+                  transition duration-300 cursor-pointer border-2 border-blue-500 px-2 py-1 rounded-md"
                   onClick={() => router.push(`/jobs/${update.name.toLowerCase().replace(/\s+/g, '-')}`)}>
                    read more
                   </button>

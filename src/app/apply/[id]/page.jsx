@@ -1,5 +1,6 @@
 
 "use client";
+import Success from '@/app/component/Success';
 import { useParams } from 'next/navigation';
 
 export default function JobApplication() {
@@ -46,8 +47,9 @@ export default function JobApplication() {
             <label className='block text-sm font-medium text-gray-700' htmlFor="linkedin">LinkedIn Profile:</label>
             <input type="url" id="linkedin" name="linkedin" placeholder="https://www.linkedin.com/in/yourprofile" className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring focus:ring-opacity-50" />
         </div>
-        <button className="w-full bg-blue-500 text-white py-2 rounded-md shadow-sm hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50" type="submit">Submit Application</button>
+        
         <p>We will review your application and get back to you soon.</p>
+        <Success />
         </form>
     </div>
   )

@@ -8,7 +8,7 @@ export default function JobCard(props) {
     const jobList = jobs.map((job) => (
         <article key={job.id} className="job-card">
             <p className="flex items-center justify-center space-x-2 text-black
-            blue-900 w-fit p-2">
+            blue-900 w-fit p-2 border-2 border-gray-700 rounded-md bg-blue-900">
                 <MdHomeWork className="text-2xl ml-2"/>
                 <span>{job.company}</span>
             </p>

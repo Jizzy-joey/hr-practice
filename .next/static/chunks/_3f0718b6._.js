@@ -59,9 +59,9 @@ function Saves() {
                 lineNumber: 23,
                 columnNumber: 11
             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ",
+                className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 border-t border-gray-200 pt-4",
                 children: updates.map((update, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "border-b border-gray-200 pb-4",
+                        className: "border-b border-gray-700 pb-4",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                 className: "text-xl font-semibold",
@@ -80,10 +80,10 @@ function Saves() {
                                 columnNumber: 17
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex items-center space-x-2",
+                                className: "flex items-center space-x-2 ",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                        className: "text-blue-500 hover:underline transition duration-300 cursor-pointer",
+                                        className: "text- hover:underline bg-blue-900 text-white hover:bg-blue-700 hover:scale-105  hover:shadow-lg transition duration-300 cursor-pointer border-2 border-blue-500 px-2 py-1 rounded-md",
                                         onClick: ()=>router.push(`/jobs/${update.name.toLowerCase().replace(/\s+/g, '-')}`),
                                         children: "read more"
                                     }, void 0, false, {
@@ -97,7 +97,7 @@ function Saves() {
                                         children: "Remove"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/(DashGroup)/saves/page.jsx",
-                                        lineNumber: 38,
+                                        lineNumber: 39,
                                         columnNumber: 19
                                     }, this)
                                 ]
